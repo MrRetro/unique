@@ -46,4 +46,3 @@ function unique(arr){
     })
     return list
 }
-```
