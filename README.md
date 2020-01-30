@@ -47,8 +47,3 @@ function unique(arr){
     return list
 }
 ```
-<<<<<<< HEAD
-
-### 高级去重
-=======
->>>>>>> 合并所有
