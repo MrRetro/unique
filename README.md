@@ -212,7 +212,7 @@ console.log(uniqueMap(arr))
 
 <details>
 <summary>展开查看</summary>
-```js
+<pre>
 function unique(arr){
     // 判断arr是否为数组
     if(!Array.isArray(arr)){
@@ -251,5 +251,5 @@ function unique(arr){
 }
 let arr = [1,1,true,true,false,false,'string','string',undefined,undefined, null,null, NaN, NaN,{},{},{a:1},{a:1},[],[],[0],[0],function(){},function(){},new Date(),new Date(),Symbol(),Symbol()]
 console.log(unique(arr))
-```
+</pre>
 </details>
