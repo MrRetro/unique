@@ -225,7 +225,6 @@ function unique(arr){
     let type = '' // 元素类型
     let item = null // 新元素项
     arr.forEach(v=>{
-        temp = ''
         type = Object.prototype.toString.call(v)
         switch(type){
             case '[object Object]':
