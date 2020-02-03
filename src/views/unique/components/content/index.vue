@@ -137,6 +137,7 @@ export default {
         padding: 10px;
         outline: none;
         border: none;
+        resize: none;
       }
     }
   }
