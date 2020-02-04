@@ -1,7 +1,5 @@
 <template>
-  <div class="title">
-    {{title}}
-  </div>
+  <div class="title" v-html="title"></div>
 </template>
 
 <script>
@@ -19,5 +17,7 @@ export default {
   line-height: 60px;
   font-size: 30px;
   background-color: antiquewhite;
+  white-space: nowrap;
+  overflow: hidden;
 }
 </style>

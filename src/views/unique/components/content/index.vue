@@ -9,7 +9,7 @@
     <div class="box">
       <h3>效果:</h3>
       <div class="text" @click="copy">
-        <textarea class="code" v-model="result" readonly></textarea>
+        <div class="code" v-html="result"></div>
       </div>
     </div>
   </div>
@@ -41,10 +41,15 @@ export default {
       deep: true
     }
   },
+  mounted () {
+    this.$nextTick(() => {
+      this.code = "[1,1,true,true,false,false,'string','string',undefined,undefined, null,null, NaN, NaN,{},{},{a:1},{a:1},[],[],[0],[0],function(){},function(){},new Date(),new Date(),Symbol(),Symbol()]"
+    })
+  },
   data () {
     return {
-      code: JSON.stringify([1, 1]),
-      result: JSON.stringify([1])
+      code: '',
+      result: ''
     }
   },
   methods: {
@@ -122,7 +127,7 @@ export default {
       line-height: 30px;
       background: #fff7ee;
       padding-left: 10px;
-      border-bottom: 1px solid #ededed;
+      border-bottom: 1px solid #f3f3f3;
     }
     .text{
       display: flex;
@@ -130,7 +135,8 @@ export default {
       background-color: white;
 
       .code{
-        font-size: 16px;
+        font: 400 16px system-ui;
+        color: black;
         line-height: 22px;
         display: flex;
         flex: 1;
@@ -138,6 +144,7 @@ export default {
         outline: none;
         border: none;
         resize: none;
+        text-align: left;
       }
     }
   }

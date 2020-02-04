@@ -1,7 +1,7 @@
 <template>
   <div class="container">
       <Head />
-      <Title title="数组去重(将数组粘贴到左边大框)" />
+      <Title title="数组去重(<span style='font-size: 22px; color: red;'>将数组粘贴到左边空白区</span>)" />
       <Content />
   </div>
 </template>

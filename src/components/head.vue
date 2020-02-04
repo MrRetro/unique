@@ -18,7 +18,7 @@ export default {
 <style scoped>
 .head{
   line-height: 80px;
-  padding-left: 10vw;
+  padding-left: 3vw;
   font-size: 58px;
 }
 </style>
