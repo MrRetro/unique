@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <CodeLayout :title="`数组去重(<span style='font-size: 22px; color: red;'>将数组粘贴到左边空白区</span>)`">
+    <CodeLayout :title="`对象比较(<span style='font-size: 22px; color: red;'>严格比较</span>)`">
       <Content slot="content" />
     </CodeLayout>
   </div>
@@ -8,9 +8,9 @@
 
 <script>
 import CodeLayout from '../../layouts/codelLayout'
-import Content from '../../components/content'
+import Content from './components/content'
 export default {
-  name: 'unique',
+  name: 'equal',
   components: {
     CodeLayout,
     Content

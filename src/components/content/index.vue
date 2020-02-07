@@ -18,9 +18,6 @@
 <script>
 export default {
   name: 'content',
-  props: {
-    title: String
-  },
   watch: {
     code: {
       handler (vl) {
@@ -32,7 +29,7 @@ export default {
             value = value.substring(1, value.length - 1)
             value = value.split(',')
           }
-          let res = JSON.stringify(this.unique(value))
+          let res = JSON.stringify(this.calculate(value))
           this.result = '[' + JSON.parse(res) + ']'
         } catch (e) {
           console.log(e)
@@ -53,7 +50,7 @@ export default {
     }
   },
   methods: {
-    unique (arr) {
+    calculate (arr) {
       // 判断arr是否为数组
       if (!Array.isArray(arr)) {
         console.log('type error!')
