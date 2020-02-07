@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Unique from '../views/unique'
 import Equal from '../views/equal'
+import Code from '../views/code'
 
 Vue.use(Router)
 
@@ -21,6 +22,11 @@ export default new Router({
       path: '/equal',
       name: 'Equal',
       component: Equal
+    },
+    {
+      path: '/code',
+      name: 'Code',
+      component: Code
     }
   ]
 })
