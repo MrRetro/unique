@@ -1,33 +1,30 @@
 <template>
   <div class="container">
-    <Head />
-    <Title :title="title" />
-    <slot name="content"></slot>
+    <CodeLayout :title="`展示`">
+      <Content slot="content" />
+    </CodeLayout>
   </div>
 </template>
 
 <script>
-import Head from '../../components/head'
-import Title from '../../components/title'
+import CodeLayout from '../../../layouts/codelLayout'
+import Content from './components/content'
 export default {
-  name: 'code-layout',
+  name: 'code',
   components: {
-    Head,
-    Title
-  },
-  props: {
-    title: String
+    CodeLayout,
+    Content
   }
 }
 </script>
 
 <style scoped>
-  .container{
+.container{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100vw;
     height: 100vh;
     background-color: wheat;
-  }
+}
 </style>
