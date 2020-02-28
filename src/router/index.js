@@ -4,6 +4,7 @@ import Unique from '../views/unique'
 import Equal from '../views/equal'
 import Code from '../views/code'
 import cssArtCode from '../views/codeViews/cssArt'
+import synMouse from '../views/synMouse'
 
 Vue.use(Router)
 
@@ -33,6 +34,11 @@ export default new Router({
       path: '/cssart',
       name: 'cssArtCode',
       component: cssArtCode
+    },
+    {
+      path: '/synmouse',
+      name: 'synMouse',
+      component: synMouse
     }
   ]
 })
