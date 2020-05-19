@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <CodeLayout :title="`展示`">
-      <Content slot="content" />
+    <CodeLayout :title="title || `展示`">
+      <Content slot="content" :new-code="code" />
     </CodeLayout>
   </div>
 </template>
@@ -14,6 +14,10 @@ export default {
   components: {
     CodeLayout,
     Content
+  },
+  props: {
+    title: String,
+    code: String
   }
 }
 </script>

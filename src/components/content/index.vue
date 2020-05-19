@@ -18,7 +18,17 @@
 <script>
 export default {
   name: 'content',
+  props: {
+    newCode: String
+  },
   watch: {
+    newCode: {
+      handle (vl) {
+        this.code = vl
+      },
+      deep: true,
+      immediate: true
+    },
     code: {
       handler (vl) {
         try {

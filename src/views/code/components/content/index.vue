@@ -29,7 +29,8 @@ export default {
           console.log(e)
         }
       },
-      deep: true
+      deep: true,
+      immediate: true
     }
   },
   mounted () {
@@ -106,6 +107,7 @@ export default {
   }
 </style>
 `
+      if (this.newCode) this.code = this.newCode
     })
   }
 }
