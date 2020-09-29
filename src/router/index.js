@@ -5,6 +5,7 @@ import Equal from '../views/equal'
 import Code from '../views/code'
 import synMouse from '../views/synMouse'
 import cssArtCode from '../views/codeViews/cssArt'
+import loadImage from '../views/codeViews/loadImage'
 import bg1 from '../views/bg1'
 import bg2 from '../views/bg2'
 import bg3 from '../views/bg3'
@@ -54,6 +55,11 @@ export default new Router({
       path: '/cssart',
       name: 'cssArtCode',
       component: cssArtCode
+    },
+    {
+      path: '/loadimage',
+      name: 'loadImage',
+      component: loadImage
     },
     {
       path: '/synmouse',
